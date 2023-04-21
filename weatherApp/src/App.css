@@ -1,0 +1,208 @@
+@font-face {
+    font-family: ConcertOne-Regular;
+    src: url(../public/ConcertOne-Regular.ttf);
+}
+html * {
+    font-family: ConcertOne-Regular;
+}
+
+.header {
+    background-color: deepskyblue;
+    height: 60px;
+}
+.header h1 {
+    color: aliceblue;
+    text-align: left;
+}
+.homeButton {
+    cursor: pointer;
+    padding: 15px;
+    padding-left: 25px;
+}
+.positionItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+    text-align: center;
+}
+
+.container {
+    flex-grow: 1;
+    margin: auto;
+    width: 85%;
+    border: 2px solid red;
+}
+
+.centerComponents {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Weather CSS */
+.weatherCitiesContainer {
+    margin-left: 25%;
+} 
+
+.weatherIcon img{
+    width: 60px;
+    height: 60px;
+}
+
+.weatherContainer{
+    padding-top: 20px;
+}
+
+/* Card design */
+.cardDesign{
+    padding: 30px;
+    background-image: url('./images/cloudsBackground.jpg');
+    background-size: 370px;
+}
+.cardCity{
+    font-size: 30px;
+    margin-top: -10px;
+}
+.cardCity_minmax{
+    color: #575756;
+}
+
+/* Search bar CSS*/
+.search {
+    width: 200px;
+    padding: 12px 24px;
+
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #575756;
+    background-color: transparent;
+
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;    
+}
+.search::placeholder {
+    color: color(#575756 a(0.8));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search:hover,
+.search:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+/* PAGE NOT FOUND */
+.containerPageNotFound {
+    text-align: center;
+}
+
+.containerPageNotFound h1{
+    font-size: 90px;
+    color: red;
+}
+
+/* Compass CSS */
+.compass {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.compass-image img {
+    width: 100%;
+    height: auto;
+}
+
+.compass-arrow {
+    position: absolute;
+    top: 22.3%;
+    left: 40.4%;
+    transform-origin: bottom center;
+    transform: translate(-50%, -50%);
+}
+
+.fa-arrow-up {
+    font-size: 110px;
+    color: red;
+}
+
+/* Details */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.templatePosition {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.detailsNumberFontSize {
+    font-size: 50px;
+}
+
+.temperature h2{
+    font-size: x-large;
+}
+
+#windSpeed, .temperature h2 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#detailsCityTitle{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -30px;
+    margin-bottom: -50px;
+}
+
+.minMaxTemp {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0px;
+}
+
+.minMaxTemp h1 {
+    padding-top: 100px;
+}
+
+.minMaxTemp img {
+    padding-top: 100px;
+    height: 300px;
+    width: 250px;
+}
+
+.sunriseSunset img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 350px;
+}
+
+.sunriseSunset {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+    text-align: center;
+}
+
+#middleSunset {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
